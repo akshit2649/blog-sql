@@ -1,12 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 const Write = () => {
+  const [value, setValue] = useState("");
+  console.log(value);
   return (
-    <div className="write">
-      <div className="content">content</div>
+    <div className="add">
+      <div className="content">
+        <input type="text" placeholder="Title" />
+        <div className="editorContaine">
+          <ReactQuill theme="snow" value={value} onChange={setValue} />;
+        </div>
+      </div>
       <div className="menu">
-        <div className="item">i1</div>
-        <div className="item">i2</div>
+        <div className="item">
+          <h1>Publish</h1>
+          <span>
+            <b>Status:</b> Draft
+          </span>
+          <span>
+            <b>Visibility: </b> Public
+          </span>
+          <input style={{ display: "none" }} type="file" id="file" />
+          <label htmlFor="file">Upload Image</label>
+          <div className="buttons pt10">
+            <button className="">Save as a draft</button>
+            <button className="">Update</button>
+          </div>
+        </div>
+        <div className="item">
+          <h1>Category</h1>
+          <input type="radio" name="cat" value="art" id="art" />
+          <label htmlFor="art">ART</label>
+          <input type="radio" name="cat" value="science" id="science" />
+          <label htmlFor="science">Science</label>
+          <input type="radio" name="cat" value="technology" id="technology" />
+          <label htmlFor="technology">Technology</label>
+          <input type="radio" name="cat" value="cinema" id="cinema" />
+          <label htmlFor="cinema">Cinema</label>
+          <input type="radio" name="cat" value="design" id="design" />
+          <label htmlFor="design">Design</label>
+          <input type="radio" name="cat" value="food" id="food" />
+          <label htmlFor="art">Food</label>
+        </div>
       </div>
     </div>
   );

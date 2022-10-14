@@ -3,6 +3,16 @@ $lightGreen: #b9e7e7;
 .app {
   display: flex;
   justify-content: center;
+
+  .ww {
+    margin-left: -20%;
+    margin-right: -19.3%;
+  }
+
+  .pt10 {
+    padding-top: 10px;
+  }
+
   .container {
     width: 1024px;
 
