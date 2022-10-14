@@ -5,16 +5,17 @@ $lightGreen: #b9e7e7;
   justify-content: center;
   .container {
     width: 1024px;
-    //LOGIN
-    //REGISTER
+
     .link {
       text-decoration: none;
       color: inherit;
     }
+    //LOGIN & REGISTER
+
     .auth {
       display: flex;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
       height: 100vh;
       background-color: $lightGreen;
@@ -28,7 +29,7 @@ $lightGreen: #b9e7e7;
       form {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 50px;
         background-color: white;
         width: 200px;
         gap: 20px;
@@ -47,36 +48,35 @@ $lightGreen: #b9e7e7;
           color: white;
         }
 
-        span {
-          font-size: 12px;
-          text-align: center;
-        }
-
         p {
           font-size: 12px;
           color: red;
+          text-align: center;
+        }
+
+        span {
+          font-size: 12px;
           text-align: center;
         }
       }
     }
 
     //NAVBAR
+
     .navbar {
       .container {
         padding: 10px 0px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         .logo {
           img {
             width: 120px;
           }
         }
-
         .links {
-          align-items: center;
           display: flex;
+          align-items: center;
           gap: 10px;
 
           h6 {
@@ -110,6 +110,7 @@ $lightGreen: #b9e7e7;
     }
 
     //FOOTER
+
     footer {
       margin-top: 100px;
       padding: 20px;
@@ -124,6 +125,7 @@ $lightGreen: #b9e7e7;
     }
 
     //HOME
+
     .home {
       .posts {
         margin-top: 50px;
@@ -153,12 +155,12 @@ $lightGreen: #b9e7e7;
               left: -20px;
               z-index: -1;
             }
-          }
 
-          img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
+            img {
+              width: 100%;
+              max-height: 400px;
+              object-fit: cover;
+            }
           }
 
           .content {
@@ -195,7 +197,7 @@ $lightGreen: #b9e7e7;
       }
     }
 
-    //SIGNLE
+    //SINGLE
 
     .single {
       display: flex;
