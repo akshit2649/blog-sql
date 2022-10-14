@@ -1,16 +1,11 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Outlet,
-} from "react-router-dom";
-import Register from "./pages/Register";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Write from "./pages/Write";
+import Register from "./pages/Register";
 import Single from "./pages/Single";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Write from "./pages/Write";
 import "./style.scss";
 
 const Layout = () => {
